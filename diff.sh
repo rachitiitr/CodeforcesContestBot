@@ -14,3 +14,4 @@ done
 
 echo $cmd
 eval $cmd
+cd ..

@@ -2,7 +2,7 @@ problem=$1
 cd $problem
 echo $(pwd)
 
-g++ sol.cpp -o solD
+g++ -std=c++17 sol.cpp -o solD
 
 infiles=(`ls in*.txt`)
 # echo ${infiles[@]}
@@ -12,4 +12,4 @@ done
 
 cd ..
 ./diff.sh $problem
-
+cd ..
