@@ -3,6 +3,7 @@ cd $problem
 echo $(pwd)
 
 g++ -std=c++17 sol.cpp -o solD
+ls
 
 infiles=(`ls in*.txt`)
 # echo ${infiles[@]}
