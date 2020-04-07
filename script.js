@@ -40,7 +40,7 @@ let getTestCaseFromProblemHtml = (dir, html) => {
 }
 
 function getTestCaseFromProblemUrl(url) {
-  var dir = `./${url[url.length-1]}`;
+  var dir = `./${url.substring(url.lastIndexOf('/')+1)}`;
 
   if (!fs.existsSync(dir)){
       fs.mkdirSync(dir);
