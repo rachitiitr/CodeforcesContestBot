@@ -1,5 +1,6 @@
 problem=$1
-cd $problem
+contest=$(echo "${CF_CONTEST//[!0-9]/}")
+cd Parsed/$contest/$problem
 echo $(pwd)
 
 g++ -std=c++17 sol.cpp -o solD
@@ -12,5 +13,7 @@ for ((i=0; i<${#infiles[@]}; i++)); do
 done
 
 cd ..
-./diff.sh $problem
+cd ..
+cd ..
+./diff.sh Parsed/$contest/$problem
 cd ..
