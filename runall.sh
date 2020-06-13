@@ -1,9 +1,10 @@
+#!/bin/bash
 problem=$1
 cd $problem
 echo $(pwd)
 
-g++ -std=c++17 sol.cpp -o solD
-ls
+g++ -std=c++17 sol.cpp -o solD && echo Compiled successfully...
+ls -l solD
 
 infiles=(`ls in*.txt`)
 # echo ${infiles[@]}
