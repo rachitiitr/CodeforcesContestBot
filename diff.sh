@@ -14,13 +14,12 @@ len=${#mainoutfiles[@]}
 for((i=0; i<$len; i++)) do
 # ToDo: Handle blank lines at end and do file comparison in bash
 #  cmp -s ${mainoutfiles[i]} ${yourfiles[i]} && echo "Test #$i passed" || echo "Test #$i failed"
-  echo On TestCase $i...
+  echo TestCase $i...
   echo ===================
   echo Expected Output
   cat ${mainoutfiles[i]} && echo
-  echo ===================
   echo Your Output
-  cat ${mainoutfiles[i]} && echo
+  cat ${yourfiles[i]} && echo
   echo ===================
   echo
 done

@@ -9,16 +9,16 @@ let getTestCaseFromProblemHtml = (dir, html) => {
   fs.copyFileSync(`${dir}/../template.cpp`, `${dir}/sol.cpp`);
   data = [];
   const $ = cheerio.load(html);
-  $('div.input').each((i, elem) => {
+  $('div.input pre').each((i, elem) => {
     data[i] = {
       ...data[i],
-      input: $(elem).text().substring('Input'.length),
+      input: $(elem).text()
     };
   });
-  $('div.output').each((i, elem) => {
+  $('div.output pre').each((i, elem) => {
     data[i] = ({
       ...data[i],
-      output: $(elem).text().substring('Output'.length),
+      output: $(elem).text()
     });
   });
   console.log(data);
