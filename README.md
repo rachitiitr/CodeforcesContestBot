@@ -12,8 +12,7 @@ npm install
 
 # Usage
 ```bash
-export CF_CONTEST=https://codeforces.com/contest/1330
-node script.js
+node script.js https://codeforces.com/contest/1330
 # will parse all the problems of the contest
 # download their testcases
 # create multiple directories A B C D E depending on the number of problems in contest
