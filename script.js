@@ -71,7 +71,7 @@ let getTotalProblemsFromContestHtml = (html) => {
   });
 }
 
-axios.get(process.env.CF_CONTEST)
+axios.get(`${process.argv.slice(2)}`)
     .then(response => {
       // console.log(response);
       getTotalProblemsFromContestHtml(response.data);
