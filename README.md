@@ -23,13 +23,10 @@ node script.js
 # which represent the testcases downloaded
 ```
 
-# Running sol.cpp on multiple testcases and comparing outputs
+# Running sol.cpp on multiple testcases and viewing output
 ```bash
 ./runall.sh A #if you want to test A/sol.cpp
 ./runall.sh D #if you want to test D/sol.cpp against your output vs sample output
-# this will open vim window
-# and compare your sol.cpp output v/s sample output for all test cases
-# each test case is compared in each tab
-# press gt to cycle through the vim tabs
-# write :qa! to exit all tabs at once
+# this will run your code on downloaded test cases
+# and print to console your output vs expected output
 ```
