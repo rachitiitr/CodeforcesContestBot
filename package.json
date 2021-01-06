@@ -4,7 +4,7 @@
   "description": "Developed by rachitiitr",
   "main": "script.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3"
   },
   "devDependencies": {},
